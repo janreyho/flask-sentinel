@@ -158,7 +158,7 @@ class Storage(object):
 
         # Add the access token to the Redis cache and set it to
         # expire at the appropriate time.
-        redis.setex(token.access_token, expires_in, user_id)
+        # redis.setex(token.access_token, expires_in, user_id)
 
         spec = {'user_id': user_id, 'client_id': client_id}
 
