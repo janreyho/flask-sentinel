@@ -66,6 +66,9 @@ Generating a Bearer Token
     $ curl -k -X POST -d "client_id=9qFbZD4udTzFVYo0u5UzkZX9iuzbdcJDRAquTfRk&grant_type=password&username=jonas&password=pass" https://localhost:5000/oauth/token
     {"access_token": "NYODXSR8KalTPnWUib47t5E8Pi8mo4", "token_type": "Bearer", "refresh_token": "s6L6OPL2bnKSRSbgQM3g0wbFkJB4ML", "scope": ""}
 
+    //开启redis-server
+    curl -k -X POST -d "client_id=o0DKRNzRNJouovo2oJupkto8jDFwa6NouU7cOQ5N&grant_type=password&username=hejiayi1&password=hejiayi1" https://localhost:5000/oauth/token
+
 Accessing a Protected Resource Using Retrieved Bearer Token
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
