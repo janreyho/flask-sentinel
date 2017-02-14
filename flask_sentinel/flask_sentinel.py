@@ -23,8 +23,8 @@ class ResourceOwnerPasswordCredentials(object):
 
     def init_app(self, app):
         config = Config(app)
-        redis.connection_pool = ConnectionPool.from_url(
-            config.value('REDIS_URL'))
+        # redis.connection_pool = ConnectionPool.from_url(
+        #     config.value('REDIS_URL'))
         self.register_blueprint(app)
 
         if config.value('TOKEN_URL') is not False:

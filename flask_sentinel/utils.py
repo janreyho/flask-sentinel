@@ -17,8 +17,8 @@ class Config(object):
         app.config.setdefault(self._key('ROUTE_PREFIX'), '/oauth')
         app.config.setdefault(self._key('TOKEN_URL'), '/token')
         app.config.setdefault(self._key('MANAGEMENT_URL'), '/management')
-        app.config.setdefault(self._key('REDIS_URL'),
-                              'redis://localhost:6379/0')
+        # app.config.setdefault(self._key('REDIS_URL'),
+        #                       'redis://localhost:6379/0')
 
     def url_rule_for(self, _key):
         return '%s%s' % (self.value('ROUTE_PREFIX'), self.value(_key))
