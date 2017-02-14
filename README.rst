@@ -74,6 +74,14 @@ Accessing a Protected Resource Using Retrieved Bearer Token
     $ curl -k -H "Authorization: Bearer NYODXSR8KalTPnWUib47t5E8Pi8mo4" https://localhost:5000/endpoint
     You made it through and accessed the protected resource!
 
+Fresh Token
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: console
+
+    $ curl -k -X POST -d "client_id=STmAq9vcrESf5pLcqcCaHvEr65Z6MDyJInbaVSQg&grant_type=refresh_token&refresh_token=GHXt7SxZ9ZtQ0qn4ppcSWvZ03RCOhj" https://localhost:5000/oauth/token
+    {"access_token": "gMeAHqc44bGHORe3jm73XuyGd1rZdB", "token_type": "Bearer", "expires_in": 3600, "refresh_token": "3gXuirX5X06MRmvWY5DvktQdev7KMM", "scope": ""}
+
 Configuration
 -------------
 Configuration works like any other `Flask configuration`_. Here are
